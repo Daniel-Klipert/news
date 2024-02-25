@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    color: rgb(75, 75, 75);
+
+}
+
+.container {
+    width: 100vw;
+    max-width: 1200px;
+    min-width: 320px;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 10vh;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+header nav a:hover {
+    border-bottom: solid rgb(75, 75, 75) 2px;
+}
+
+main {
+    margin-top: 5vh;
+    display: flex;
+    flex: 1 1 auto;
+    
+}
+
+main aside {
+    flex-basis: 20%;
+    
+}
+aside img{
+    width: 90%;
+}
+aside figure{
+}
+
+.news {
+    border-bottom: 2px solid rgb(75, 75, 75);
+    padding-bottom: 20px;
+}
+
+section {
+    flex: 1 1 50%;
+    padding: 0px 20px;
+}
+
+.el {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.el img {
+    height: 40px;
+}
+
+section p{
+    margin: 10px 0;
+}
+footer {
+    height: 10vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px) {
+main{
+    flex-direction: column;
+    padding: 20px
+} 
+   
+}
